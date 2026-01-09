@@ -1,21 +1,21 @@
 const cheerio = require("cheerio");
-const site = require("./_data/site.json");
+const site = require("./src/_data/site.json");
 
 module.exports = function (eleventyConfig) {
   // copy site data
   eleventyConfig.addPassthroughCopy('.htaccess');
   // copy directories to the output
-  eleventyConfig.addPassthroughCopy('css');
-  eleventyConfig.addPassthroughCopy('js');
-  eleventyConfig.addPassthroughCopy('img');
+  eleventyConfig.addPassthroughCopy('src/css');
+  eleventyConfig.addPassthroughCopy('src/js');
+  eleventyConfig.addPassthroughCopy('src/img');
   // copy favicons
   eleventyConfig.addPassthroughCopy('*.ico');
   eleventyConfig.addPassthroughCopy('*.png');
 
   // watch directories for changes
-  eleventyConfig.addWatchTarget('css');
-  eleventyConfig.addWatchTarget('js');
-  eleventyConfig.addWatchTarget('img');
+  eleventyConfig.addWatchTarget('src/css');
+  eleventyConfig.addWatchTarget('src/js');
+  eleventyConfig.addWatchTarget('src/img');
 
   // shortcodes
   eleventyConfig.addShortcode("currentYear", () => `${new Date().getFullYear()}`);
@@ -73,5 +73,12 @@ module.exports = function (eleventyConfig) {
     }
     return content;
   });
+
+  return {
+    dir: {
+      input: "src",
+      output: "_site"
+    }
+  };
 
 };
