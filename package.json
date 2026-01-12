@@ -1,5 +1,5 @@
 {
-  "name": "terrabyte-11ty-starter",
+  "name": "@terrabyte/11ty-starter",
   "version": "1.0.1",
   "description": "Boilerplate for Terrabyte 11ty websites.",
   "main": "index.js",
