@@ -1,7 +1,7 @@
 {
-  "name": "terrabyte-11ty-starter",
-  "version": "1.0.0",
-  "description": "Boilerplate for 11ty Terrabyte websites.",
+  "name": "@terrabyte/11ty-starter",
+  "version": "1.0.1",
+  "description": "Boilerplate for Terrabyte 11ty web projects.",
   "main": "index.js",
   "scripts": {
     "build": "eleventy",
