@@ -15,5 +15,7 @@ To best utilize this repo, simply copy/paste the content here into your downstre
 Caveats that _should not_ be copied from this repo include:
 
 - `.git`: That is _THIS_ project's git history - you'll make your own in your new project.
+- `_site`: Site build of the template (you'll build your own in the new project)
+- `node_modules`: You will install your own packages when building your new project
 - `package.json`: You just created a package file when initializing the project.
 - `README.md`: Your new project requires it's own README :)
