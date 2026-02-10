@@ -9,6 +9,7 @@
   "language": "en-US",
   "description": "Terrabyte is green tech company based in Omaha, NE.",
   "accentColor": "#0A8C61",
+  "defaultTheme": "system",
   "backgroundColor": "#333333",
   "foregroundColor": "#ffffff",
   "schemaType": "Thing",

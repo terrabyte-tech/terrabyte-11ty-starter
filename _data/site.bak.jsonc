@@ -11,7 +11,10 @@
   "description": "Terrabyte is green tech company based in Omaha, NE.", // surfaces in meta/social descriptions
   // surfaces as the metadata for "theme color" (mobile tab background color)
   // options: any hex code; "Canapi" uses #46af71, "Terrabyte" uses #0A8C61, "Pixel Planet Today" uses #388841, "Wasted Space" uses #83769c
-  "accentColor": "#0A8C61", 
+  "accentColor": "#0A8C61",
+  // default color theme for the website (before user selects a theme)
+  // options: system (match system settings), light, dark 
+  "defaultTheme": "system",
   "backgroundColor": "#333333", // currently not supported/surfaces
   "foregroundColor": "#ffffff", // currently not supported/surfaces
   // remove if no particular style set; determines additional CSS included in <head>
