@@ -12,9 +12,8 @@ To best utilize this repo, simply copy/paste the content here into your downstre
     - `.git`: That is _THIS_ project's git history - you'll make your own in your new project.
     - `_site`: Site build of the template (you'll build your own in the new project)
     - `node_modules`: You will install your own packages when building your new project
-    - `package.json`: Initializing npm/pnpm will create this in your new project.
     - `README.md`: Your new project should have it's own README :)
-3. Initialize the project to use node -> `npm init -y`
-4. Copy `"scripts": {..}`, `"devDependencies": {..}`, and `"dependencies": {..}` from the Starter's `package.json` and paste them into the new project's `package.json`
-5. Install the dependencies -> `pnpm install`
-
+3. Replace content in the new project's `package.json`:
+    - Replace/remove references to GitHub repository
+    - Replace project details like title, description, and version
+4. Install the dependencies -> `pnpm install`
