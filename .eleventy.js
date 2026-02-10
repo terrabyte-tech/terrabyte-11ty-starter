@@ -31,6 +31,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.setLibrary("njk", env);
 
 // Passthroughs
+  eleventyConfig.addPassthroughCopy('.htaccess');
   eleventyConfig.addPassthroughCopy("src/img");
   eleventyConfig.addPassthroughCopy("src/js");
   eleventyConfig.addPassthroughCopy("src/*.ico");
