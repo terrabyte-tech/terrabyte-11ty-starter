@@ -9,7 +9,9 @@
   "keywords": "terrabyte, eco, technology, green tech, omaha, nebraska, silicon prairie", // surfaces in metadata in <head>
   "language": "en-US", // currently not supported/surfaces
   "description": "Terrabyte is green tech company based in Omaha, NE.", // surfaces in meta/social descriptions
-  "accentColor": "#0A8C61", // surfaces as the metadata for "theme color" (mobile tab background color)
+  // surfaces as the metadata for "theme color" (mobile tab background color)
+  // options: any hex code; "Canapi" uses #46af71, "Terrabyte" uses #0A8C61, "Pixel Planet Today" uses #388841, "Wasted Space" uses #83769c
+  "accentColor": "#0A8C61", 
   "backgroundColor": "#333333", // currently not supported/surfaces
   "foregroundColor": "#ffffff", // currently not supported/surfaces
   // remove if no particular style set; determines additional CSS included in <head>
