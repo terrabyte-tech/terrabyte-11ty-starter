@@ -32,6 +32,7 @@ module.exports = function (eleventyConfig) {
 
 // Passthroughs
   eleventyConfig.addPassthroughCopy('.htaccess');
+  eleventyConfig.addPassthroughCopy("src/css");
   eleventyConfig.addPassthroughCopy("src/img");
   eleventyConfig.addPassthroughCopy("src/js");
   eleventyConfig.addPassthroughCopy("src/*.ico");
