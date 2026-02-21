@@ -1,5 +1,6 @@
 {
   "templateVersion": "1.4.0",
+  "terrabyteWebUI": "true",
   "project": "Project Name",
   "title": "Website Title",
   "url": "https://www.terrabyte.eco",

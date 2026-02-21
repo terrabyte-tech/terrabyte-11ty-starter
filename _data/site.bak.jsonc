@@ -1,5 +1,6 @@
 {
   "templateVersion": "1.4.0", // if using Terrabyte legacy template process
+  "terrabyteWebUI": "true", // if utilizing the Terrabyte Web UI package (for developer reference)
   "project": "Project Name", // surfaces in console logs when documenting project scripts have loaded; "Canapi" creates link to shared Canapi styles in <head>
   //  options: "Canapi", "Terrabyte", "Wasted Space"
   "title": "Website Title", // surfaces as title in browser tab; prefix for page title if there is a "subtitle" in page's frontmatter.
