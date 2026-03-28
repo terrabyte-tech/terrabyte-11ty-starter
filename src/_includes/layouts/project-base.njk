@@ -1,3 +1,11 @@
 {% extends "layouts/base.njk" %}
 
-{# overwrites? #}
+{# head overwrites #}
+
+{# body overwrites #}
+{% block header %}
+{% endblock %}
+
+{% block footer %}
+  {% include "partials/basic-footer.njk" %}
+{% endblock %}
