@@ -1,11 +1,25 @@
 {% extends "layouts/base.njk" %}
 
-{# head overwrites #}
+{# head overwrites/additions #}
+{% block additionalSiteStyles %}
+  {# <link rel="stylesheet" href="/css/header-styles.css" async defer> #}
+  {# <link rel="stylesheet" href="/css/footer-styles.css" async defer> #}
+{% endblock %}
 
-{# body overwrites #}
+{% block additionalSiteScripts %}
+  {# <script src="/js/header-scripts.js" async defer></script> #}
+{% endblock %}
+
+
+{# body overwrites/additions #}
+{% block icons %}
+  {% include "partials/project-svgs.njk" %}
+{% endblock %}
+
 {% block header %}
+  {% include "partials/project-header.njk" %}
 {% endblock %}
 
 {% block footer %}
-  {% include "partials/basic-footer.njk" %}
+  {% include "partials/footer.njk" %}
 {% endblock %}

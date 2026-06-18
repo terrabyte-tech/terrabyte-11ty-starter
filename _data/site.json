@@ -1,5 +1,4 @@
 {
-  "templateVersion": "1.4.0",
   "terrabyteWebUI": "true",
   "project": "Project Name",
   "title": "Website Title",
@@ -14,5 +13,6 @@
   "backgroundColor": "#333333",
   "foregroundColor": "#ffffff",
   "schemaType": "Thing",
+  "sameAs": [],
   "fontsRel": "https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Manrope:wght@400;800&display=swap"
 }

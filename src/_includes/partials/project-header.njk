@@ -1,0 +1,25 @@
+{# starter code for site header #}
+{# pass in the navSelected variable from frontmatter, add the .selected class to this particular nav item #}
+<header id="header" class="padded-section">
+  <div class="max-width" data-au="flex-container align-center">
+    <div class="header-logo-container" data-au="flex-width flex-container align-center">
+      <a id="header-logo" href="/" data-au="set-width flex-container align-center" aria-label="{{ site.title }} homepage">
+        <svg viewBox="0 0 850 100" role="presentation">
+          <use href="#logo"/>
+        </svg>
+      </a>
+    </div>
+    <div class="nav-container" data-au="set-width flex-container align-center">
+      <div class="hamburger-menu-icon clickable" data-nav-toggle role="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="main-nav">
+        <svg viewBox="0 0 50 50" role="presentation">
+          <use href="#hamburger-menu-icon"/>
+        </svg>
+      </div>
+      <nav id="main-nav" data-nav data-au="flex-container align-center">
+        <a id="home-nav-link" class="nav-item-container {% if navSelected == 'home' %}selected{% endif %}" href="/">
+          <span>Home</span>
+        </a>
+      </nav>
+    </div>
+  </div>
+</header>
