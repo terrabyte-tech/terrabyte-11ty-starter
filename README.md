@@ -7,10 +7,12 @@ Boilerplate for Terrabyte 11ty web projects. Built on [Eleventy (11ty)](https://
 
 1. Create a new repo for your project and clone it locally.
 2. Copy the contents of this starter into the new repo. Do **not** copy:
-   - `.git` — that's this repo's history; you'll have your own
+   - `.git` — that's _this_ repo's history; you'll have your own
    - `_site` — the built output; it gets generated on build
    - `node_modules` — install your own with `pnpm install`
-3. Update `package.json` with your project's name, description, version, and repository URL.
+   - `package.json` — data that pertains to _this_ Starter repo
+   - `CHANGELOG.md`— a changelog of everything new within _this_ Starter repo
+3. Copy `package.bak.json` into your new project as `package.json` and update `name`, `description`, `repository`, `bugs`, and `homepage` with your project's details.
 4. Update `_data/site.json` with your project's metadata (title, URL, description, accent color, etc.). Refer to `_data/site.bak.jsonc` for documentation on each field.
 5. Install dependencies: `pnpm install`
 6. Start the dev server: `pnpm start`

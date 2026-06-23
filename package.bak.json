@@ -1,0 +1,27 @@
+{
+  "name": "@terrabyte/project-name",
+  "version": "1.0.0",
+  "description": "Description of the project.",
+  "scripts": {
+    "build": "eleventy",
+    "start": "eleventy --serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/terrabyte-tech/project-name.git"
+  },
+  "keywords": ["11ty"],
+  "author": "Terrabyte",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/terrabyte-tech/project-name/issues"
+  },
+  "homepage": "https://github.com/terrabyte-tech/project-name#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.2",
+    "cheerio": "^1.1.2"
+  },
+  "dependencies": {
+    "@terrabyte/web-ui": "github:terrabyte-tech/terrabyte-web-ui"
+  }
+}
