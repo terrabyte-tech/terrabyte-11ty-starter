@@ -1,19 +1,41 @@
-# Terrabyte 11ty Starter/Boilerplate
+# Terrabyte 11ty Starter
 `Terrabyte Tools`
 
-Boilerplate for Terrabyte 11ty websites. Get a jump on launching a Terrabyte static website.
+Boilerplate for Terrabyte 11ty web projects. Built on [Eleventy (11ty)](https://www.11ty.dev/) and the [`@terrabyte/web-ui`](https://github.com/terrabyte-tech/terrabyte-web-ui) shared UI package.
 
-To best utilize this repo, simply copy/paste the content here into your downstream project. Eventually, this Starter will provide the infrastructure for all web projects, and the [`terrabyte-web-ui`](https://github.com/terrabyte-tech/terrabyte-web-ui) package will provide the building blocks for them. Until contributors have more capacity, the UI repo will be frozen and not published as an node package. Future versions may entail swapping the static GitHub path here with the published package.
+## How to use
 
-## How to use:
+1. Create a new repo for your project and clone it locally.
+2. Copy the contents of this starter into the new repo. Do **not** copy:
+   - `.git` — that's this repo's history; you'll have your own
+   - `_site` — the built output; it gets generated on build
+   - `node_modules` — install your own with `pnpm install`
+3. Update `package.json` with your project's name, description, version, and repository URL.
+4. Update `_data/site.json` with your project's metadata (title, URL, description, accent color, etc.). Refer to `_data/site.bak.jsonc` for documentation on each field.
+5. Install dependencies: `pnpm install`
+6. Start the dev server: `pnpm start`
 
-1. To best utilize this starter template, begin by creating a new repo for your new project. Checkout to edit as you normally would.
-2. Copy and paste the content in this project into the new project. Caveats that _should not_ be copied from this repo include:
-    - `.git`: That is _THIS_ project's git history - you'll make your own in your new project.
-    - `_site`: Site build of the template (you'll build your own in the new project)
-    - `node_modules`: You will install your own packages when building your new project
-    - `README.md`: Your new project should have it's own README :)
-3. Replace content in the new project's `package.json`:
-    - Replace/remove references to GitHub repository
-    - Replace project details like title, description, and version
-4. Install the dependencies -> `pnpm install`
+## Release process
+
+To cut a new version of the starter itself:
+
+```
+pnpm run release patch|minor|major
+```
+
+This bumps `package.json`, updates `terrabyteStarterVersion` in `_data/site.json`, prepends a new entry to `CHANGELOG.md`, and pushes with a version tag.
+
+## Structure
+
+| Path | Purpose |
+|---|---|
+| `_data/site.json` | Project metadata (title, URL, theme, schema, etc.) |
+| `.eleventy.js` | Standard 11ty config — do not deviate from this pattern |
+| `src/_includes/layouts/project-base.njk` | Extends `base.njk` from web-ui; add project CSS/JS here |
+| `src/_includes/partials/project-header.njk` | Project-specific site header and nav |
+| `src/_includes/partials/project-svgs.njk` | Project-specific SVG symbols |
+| `src/css/site-styles.css` | Project-specific styles |
+| `src/js/site-scripts.js` | Project-specific scripts |
+| `src/sitemap.xml.njk` | Auto-generated sitemap (excludes `noIndex: true` pages) |
+| `src/llms.txt.njk` | Auto-generated AI crawler file |
+| `src/error.php.njk` | PHP-driven error page (400/401/403/404) |
