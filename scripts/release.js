@@ -27,6 +27,14 @@ try {
   commits = "- Initial release";
 }
 
+// Sync terrabyteStarterVersion in _data/site.json
+const siteJsonPath = path.join(__dirname, "../_data/site.json");
+const siteJson = JSON.parse(fs.readFileSync(siteJsonPath, "utf8"));
+siteJson.terrabyteStarterVersion = version;
+fs.writeFileSync(siteJsonPath, JSON.stringify(siteJson, null, 2) + "\n");
+execSync("git add _data/site.json", { stdio: "inherit" });
+console.log(`site.json terrabyteStarterVersion updated to v${version}`);
+
 const entry = `## [${version}] - ${date}\n${commits}\n\n`;
 
 const changelogPath = path.join(__dirname, "../CHANGELOG.md");
