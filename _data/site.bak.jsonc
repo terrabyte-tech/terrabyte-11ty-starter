@@ -19,7 +19,7 @@
   "defaultTheme": "system",
   "backgroundColor": "#333333", // currently not supported/surfaces
   "foregroundColor": "#ffffff", // currently not supported/surfaces
-  // remove if no particular style set; determines additional CSS included in <head>
+  // remove if no particular style set; determines additional CSS included in <head> as well as additional passthroughs for pixel art UI/UX
   // options: "pixel"
   "styleType": "pixel",
   // defines the type of schema metadata/structure
