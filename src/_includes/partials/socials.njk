@@ -1,0 +1,14 @@
+<div class="socials-container max-width" data-au="flex-container justify-center mobile-flex-wrap xsmall-gap">
+  {% for link in socials %}
+    {# modern links #}
+    {# <a class="social icon-container" href="{{ link.url }}" target="_blank" aria-label="{{ link.ariaLabel }}">
+      <div class="icon">
+        <svg viewBox="0 0 50 50" role="presentation">
+          <use href="#{{ link.id }}-icon"/>
+        </svg>
+      </div>
+    </a> #}
+    {# pixel links #}
+    {# <a class="pixel-social-icon {{ link.id }}-icon" href="{{ link.url }}" target="_blank" aria-label="{{ link.ariaLabel }}"></a> #}
+  {% endfor %}
+</div>
