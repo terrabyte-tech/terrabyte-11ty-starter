@@ -1,6 +1,6 @@
 {
   "name": "@terrabyte/11ty-starter",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Boilerplate for Terrabyte 11ty web projects.",
   "main": "index.js",
   "scripts": {
