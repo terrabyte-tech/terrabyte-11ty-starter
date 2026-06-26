@@ -2,6 +2,9 @@
 
 All notable changes to `@terrabyte/11ty-starter` are documented here.
 
+## [1.2.2] - 2026-06-26
+- Initial release
+
 ## [1.2.1] - 2026-06-26
 - Initial release
 
