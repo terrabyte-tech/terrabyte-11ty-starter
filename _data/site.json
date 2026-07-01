@@ -15,5 +15,7 @@
   "foregroundColor": "#ffffff",
   "schemaType": "Thing",
   "sameAs": [],
-  "fontsRel": "https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Manrope:wght@400;800&display=swap"
+  "fontsRel": "https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Manrope:wght@400;800&display=swap",
+  "fontsCss": "",
+  "fonts": []
 }

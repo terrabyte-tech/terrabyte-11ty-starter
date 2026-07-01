@@ -29,11 +29,25 @@
   "schemaType": "Organization",
   // only used when outlining that a website entity is the same as social media handles
   "sameAs": [],
-  // surfaces in CSS references to font families
+  // FONT LOADING — two approaches, use one or the other:
+  //
+  // Option A: Google Fonts (simple, no setup)
+  // Provide a Google Fonts stylesheet URL. Used as a fallback if fontsCss/fonts are not set.
   // Canapi font families
   "fontsRel": "https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Manrope:wght@400;800&display=swap",
   // Pixel font families
   "fontsRel": "https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap",
+  //
+  // Option B: Self-hosted fonts (recommended — faster, no external dependency, eliminates FOUT)
+  // Step 1: Add woff2 font files to src/fonts/
+  // Step 2: Create src/css/fonts.css with @font-face declarations for each file
+  // Step 3: Set fontsCss to the path of that stylesheet
+  // Step 4: List each woff2 file path in fonts — base.njk generates <link rel="preload"> for each,
+  //         telling the browser to fetch them at highest priority before first paint
+  // Both fields are required together. When set, fontsRel is ignored.
+  "fontsCss": "/css/fonts.css",
+  "fonts": ["/fonts/font-name-weight.woff2"],
+  //
   "iconsRel": "", // URL for an icon set; remove if none
   // Canapi API key; remove if no Canapi integration
   "canapiKey": ""
