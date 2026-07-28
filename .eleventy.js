@@ -33,13 +33,12 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.setLibrary("njk", env);
 
 // Passthroughs
-  eleventyConfig.addPassthroughCopy('src/.htaccess');
-  eleventyConfig.addPassthroughCopy("src/css");
-  eleventyConfig.addPassthroughCopy("src/fonts");
-  eleventyConfig.addPassthroughCopy("src/img");
-  eleventyConfig.addPassthroughCopy("src/js");
-  eleventyConfig.addPassthroughCopy("src/*.ico");
-  eleventyConfig.addPassthroughCopy("src/*.png");
+// extension-based globbing so any new asset folder (nested anywhere in src/) is picked up
+// automatically, instead of needing a new addPassthroughCopy line per folder
+  eleventyConfig.addPassthroughCopy("src/.htaccess");
+  eleventyConfig.addPassthroughCopy("src/**/*.css");
+  eleventyConfig.addPassthroughCopy("src/**/*.js");
+  eleventyConfig.addPassthroughCopy("src/**/*.{png,jpg,jpeg,gif,svg,webp,ico,woff,woff2}");
 
   eleventyConfig.addPassthroughCopy({
     "node_modules/@terrabyte/web-ui/css": "css",
@@ -53,9 +52,9 @@ module.exports = function (eleventyConfig) {
   }
 
 // Watch targets
-  eleventyConfig.addWatchTarget("src/css");
-  eleventyConfig.addWatchTarget("src/js");
-  eleventyConfig.addWatchTarget("src/img");
+  eleventyConfig.addWatchTarget("src/**/*.css");
+  eleventyConfig.addWatchTarget("src/**/*.js");
+  eleventyConfig.addWatchTarget("src/**/*.{png,jpg,jpeg,gif,svg,webp,ico,woff,woff2}");
   eleventyConfig.addWatchTarget("node_modules/@terrabyte/web-ui");
 
 // Shortcodes
