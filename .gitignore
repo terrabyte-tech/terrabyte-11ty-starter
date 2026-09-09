@@ -1,4 +1,30 @@
-node_modules
+# //////////
+# global ignores
+# //////////
+node_modules/
 _site
-ref/
 private/
+ref/
+secrets/
+.env
+
+
+# //////////
+# potential ignores (may not be needed for every project, but won't hurt including)
+# //////////
+
+# code management
+.claude/
+
+# firebase
+.firebase/
+*firebase-adminsdk*.json
+
+# cloud functions
+functions/package.json
+functions/permissions.json
+
+
+# //////////
+# project-specific ignores
+# //////////
