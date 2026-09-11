@@ -8,16 +8,19 @@ importers:
 
   .:
     dependencies:
+      '@goldenharpmedia/aurum':
+        specifier: github:goldenharpmedia/aurum
+        version: https://codeload.github.com/goldenharpmedia/aurum/tar.gz/b2d07eaf36af9429edba21332d0c277afe669fb2
       '@terrabyte/web-ui':
         specifier: github:terrabyte-tech/terrabyte-web-ui
-        version: https://codeload.github.com/terrabyte-tech/terrabyte-web-ui/tar.gz/eef7343a11cbae6630474a1e08b0eadbbf674d7e
-      cheerio:
-        specifier: ^1.1.2
-        version: 1.1.2
+        version: https://codeload.github.com/terrabyte-tech/terrabyte-web-ui/tar.gz/b45ba4d530ecfa72e25048253bf1ad3d43439a92
     devDependencies:
       '@11ty/eleventy':
         specifier: ^3.1.2
         version: 3.1.2
+      cheerio:
+        specifier: ^1.1.2
+        version: 1.1.2
 
 packages:
 
@@ -57,6 +60,10 @@ packages:
     resolution: {integrity: sha512-SX48BTLEGX8T/OsKWORsHAAeiDsbFl79Oa/0Wg/mv/d27b7trCVZs7fMHvpSgDvZz/fZqx5rDk8+nx5oyT7xBw==}
     engines: {node: '>=18'}
 
+  '@goldenharpmedia/aurum@https://codeload.github.com/goldenharpmedia/aurum/tar.gz/b2d07eaf36af9429edba21332d0c277afe669fb2':
+    resolution: {tarball: https://codeload.github.com/goldenharpmedia/aurum/tar.gz/b2d07eaf36af9429edba21332d0c277afe669fb2}
+    version: 1.3.1
+
   '@sindresorhus/slugify@2.2.1':
     resolution: {integrity: sha512-MkngSCRZ8JdSOCHRaYd+D01XhvU3Hjy6MGl06zhOk614hp9EOAp5gIkBeQg7wtmxpitU6eAL4kdiRMcJa2dlrw==}
     engines: {node: '>=12'}
@@ -65,9 +72,9 @@ packages:
     resolution: {integrity: sha512-doH1gimEu3A46VX6aVxpHTeHrytJAG6HgdxntYnCFiIFHEM/ZGpG8KiZGBChchjQmG0XFIBL552kBTjVcMZXwQ==}
     engines: {node: '>=12'}
 
-  '@terrabyte/web-ui@https://codeload.github.com/terrabyte-tech/terrabyte-web-ui/tar.gz/eef7343a11cbae6630474a1e08b0eadbbf674d7e':
-    resolution: {tarball: https://codeload.github.com/terrabyte-tech/terrabyte-web-ui/tar.gz/eef7343a11cbae6630474a1e08b0eadbbf674d7e}
-    version: 1.0.6
+  '@terrabyte/web-ui@https://codeload.github.com/terrabyte-tech/terrabyte-web-ui/tar.gz/b45ba4d530ecfa72e25048253bf1ad3d43439a92':
+    resolution: {tarball: https://codeload.github.com/terrabyte-tech/terrabyte-web-ui/tar.gz/b45ba4d530ecfa72e25048253bf1ad3d43439a92}
+    version: 1.6.0
 
   a-sync-waterfall@1.0.1:
     resolution: {integrity: sha512-RYTOHHdWipFUliRFMCS4X2Yn2X8M87V/OpSqWzKKOGhzqyUxzyVmhHDH9sAvG+ZuQf/TAOFsLCpMw09I1ufUnA==}
@@ -720,6 +727,8 @@ snapshots:
       maximatch: 0.1.0
       slash: 3.0.0
 
+  '@goldenharpmedia/aurum@https://codeload.github.com/goldenharpmedia/aurum/tar.gz/b2d07eaf36af9429edba21332d0c277afe669fb2': {}
+
   '@sindresorhus/slugify@2.2.1':
     dependencies:
       '@sindresorhus/transliterate': 1.6.0
@@ -729,7 +738,7 @@ snapshots:
     dependencies:
       escape-string-regexp: 5.0.0
 
-  '@terrabyte/web-ui@https://codeload.github.com/terrabyte-tech/terrabyte-web-ui/tar.gz/eef7343a11cbae6630474a1e08b0eadbbf674d7e': {}
+  '@terrabyte/web-ui@https://codeload.github.com/terrabyte-tech/terrabyte-web-ui/tar.gz/b45ba4d530ecfa72e25048253bf1ad3d43439a92': {}
 
   a-sync-waterfall@1.0.1: {}
 
